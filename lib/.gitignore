@@ -1,0 +1,7 @@
+*.pyc
+*.py~
+*.comp.js
+*.DS_Store
+locale
+.wnf-lang-status
+*.swp

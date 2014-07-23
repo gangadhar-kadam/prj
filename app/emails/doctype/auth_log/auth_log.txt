@@ -1,0 +1,60 @@
+[
+ {
+  "creation": "2014-07-02 03:33:40", 
+  "docstatus": 0, 
+  "modified": "2014-07-03 02:19:26", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "doctype": "DocType", 
+  "document_type": "System", 
+  "module": "Emails", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "name": "__common__", 
+  "parent": "Auth Log", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0
+ }, 
+ {
+  "create": 1, 
+  "doctype": "DocPerm", 
+  "name": "__common__", 
+  "parent": "Auth Log", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "role": "Administrator", 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Auth Log"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "auth_execution_datetime", 
+  "fieldtype": "Datetime", 
+  "label": "Auth Execution DateTime"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "profiles", 
+  "fieldtype": "Small Text", 
+  "label": "Profiles"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "issue", 
+  "fieldtype": "Data", 
+  "label": "Issue"
+ }, 
+ {
+  "doctype": "DocPerm"
+ }
+]

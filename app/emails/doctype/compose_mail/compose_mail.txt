@@ -1,0 +1,124 @@
+[
+ {
+  "creation": "2014-06-16 12:09:58", 
+  "docstatus": 0, 
+  "modified": "2014-07-14 05:58:16", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "autoname": "CM.#########", 
+  "doctype": "DocType", 
+  "document_type": "Transaction", 
+  "module": "Emails", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "name": "__common__", 
+  "parent": "Compose Mail", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0
+ }, 
+ {
+  "cancel": 1, 
+  "create": 1, 
+  "doctype": "DocPerm", 
+  "match": "owner", 
+  "name": "__common__", 
+  "parent": "Compose Mail", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "role": "All", 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Compose Mail"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "to", 
+  "fieldtype": "Link", 
+  "in_list_view": 1, 
+  "label": "To", 
+  "options": "Profile", 
+  "reqd": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "cc", 
+  "fieldtype": "Link", 
+  "label": "Cc", 
+  "options": "Profile"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "subject", 
+  "fieldtype": "Data", 
+  "in_list_view": 1, 
+  "label": "Subject", 
+  "reqd": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "content", 
+  "fieldtype": "Text Editor", 
+  "label": "Content"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "communication_date", 
+  "fieldtype": "Date", 
+  "in_list_view": 0, 
+  "label": "Date"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_6", 
+  "fieldtype": "Section Break"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "send", 
+  "fieldtype": "Button", 
+  "label": "Send"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_8", 
+  "fieldtype": "Column Break"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "save_as_draft", 
+  "fieldtype": "Button", 
+  "label": "Save as Draft", 
+  "options": "save_as_draft"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "flag", 
+  "fieldtype": "Select", 
+  "hidden": 1, 
+  "in_list_view": 1, 
+  "label": "Flag", 
+  "options": "Draft\nSent", 
+  "read_only": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "communications", 
+  "fieldtype": "Table", 
+  "hidden": 1, 
+  "label": "Communications", 
+  "options": "Communication", 
+  "print_hide": 1
+ }, 
+ {
+  "doctype": "DocPerm"
+ }
+]

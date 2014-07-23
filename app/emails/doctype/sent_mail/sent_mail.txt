@@ -1,0 +1,178 @@
+[
+ {
+  "creation": "2014-07-03 05:06:24", 
+  "docstatus": 0, 
+  "modified": "2014-07-15 02:20:48", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "autoname": "SM/.#############", 
+  "custom": 1, 
+  "doctype": "DocType", 
+  "document_type": "Transaction", 
+  "module": "Emails", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "name": "__common__", 
+  "parent": "Sent Mail", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0
+ }, 
+ {
+  "cancel": 1, 
+  "create": 1, 
+  "doctype": "DocPerm", 
+  "match": "owner", 
+  "name": "__common__", 
+  "parent": "Sent Mail", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "role": "All", 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Sent Mail"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "subject_section", 
+  "fieldtype": "Section Break", 
+  "label": "Subject"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "subject", 
+  "fieldtype": "Data", 
+  "in_filter": 0, 
+  "in_list_view": 1, 
+  "label": "Subject", 
+  "reqd": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "naming_series", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Series"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_4", 
+  "fieldtype": "Column Break"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "raised_by", 
+  "fieldtype": "Data", 
+  "in_list_view": 0, 
+  "label": "Raised By (Email)", 
+  "reqd": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email_uid", 
+  "fieldtype": "Int", 
+  "label": "Email uid"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email_date", 
+  "fieldtype": "Data", 
+  "label": "Email Date"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "owner", 
+  "fieldtype": "Data", 
+  "hidden": 0, 
+  "label": "Owner"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "messages", 
+  "fieldtype": "Section Break", 
+  "label": "Messages"
+ }, 
+ {
+  "depends_on": "eval:doc.__islocal", 
+  "doctype": "DocField", 
+  "fieldname": "description", 
+  "fieldtype": "Text", 
+  "label": "Description", 
+  "read_only": 1
+ }, 
+ {
+  "depends_on": "eval:!doc.__islocal", 
+  "doctype": "DocField", 
+  "fieldname": "thread_html", 
+  "fieldtype": "HTML", 
+  "label": "Thread HTML", 
+  "read_only": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "content_type", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Content Type"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "flag", 
+  "fieldtype": "Select", 
+  "hidden": 1, 
+  "in_list_view": 1, 
+  "label": "Flag", 
+  "options": "Read\nUnread"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "communications", 
+  "fieldtype": "Table", 
+  "hidden": 1, 
+  "label": "Communications", 
+  "options": "Communication", 
+  "print_hide": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "company", 
+  "fieldtype": "Link", 
+  "hidden": 1, 
+  "label": "Company", 
+  "options": "Company"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "lead", 
+  "fieldtype": "Link", 
+  "hidden": 1, 
+  "label": "Lead", 
+  "options": "Lead"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "contact", 
+  "fieldtype": "Link", 
+  "hidden": 1, 
+  "label": "Contact", 
+  "options": "Contact"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "customer", 
+  "fieldtype": "Link", 
+  "label": "Customer", 
+  "options": "Customer"
+ }, 
+ {
+  "doctype": "DocPerm"
+ }
+]

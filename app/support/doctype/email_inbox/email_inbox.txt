@@ -1,0 +1,234 @@
+[
+ {
+  "creation": "2014-04-11 10:56:03", 
+  "docstatus": 0, 
+  "modified": "2014-07-03 07:02:39", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "autoname": "EI/.#############", 
+  "custom": 1, 
+  "doctype": "DocType", 
+  "document_type": "Transaction", 
+  "module": "Support", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "name": "__common__", 
+  "parent": "Email Inbox", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0
+ }, 
+ {
+  "cancel": 1, 
+  "doctype": "DocPerm", 
+  "match": "owner", 
+  "name": "__common__", 
+  "parent": "Email Inbox", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "role": "All", 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Email Inbox"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "subject_section", 
+  "fieldtype": "Section Break", 
+  "label": "Subject"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "subject", 
+  "fieldtype": "Data", 
+  "in_filter": 1, 
+  "in_list_view": 1, 
+  "label": "Subject", 
+  "reqd": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "naming_series", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Series"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "cb00", 
+  "fieldtype": "Column Break"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "status", 
+  "fieldtype": "Select", 
+  "hidden": 1, 
+  "in_list_view": 0, 
+  "label": "Status", 
+  "no_copy": 1, 
+  "options": "Open\nReplied\nHold\nClosed", 
+  "search_index": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "raised_by", 
+  "fieldtype": "Data", 
+  "in_filter": 1, 
+  "in_list_view": 1, 
+  "label": "Raised By (Email)", 
+  "reqd": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email_uid", 
+  "fieldtype": "Int", 
+  "hidden": 0, 
+  "label": "Email uid"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email_date", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Email Date", 
+  "reqd": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "owner", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Owner"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "sb00", 
+  "fieldtype": "Section Break", 
+  "label": "Messages"
+ }, 
+ {
+  "depends_on": "eval:doc.__islocal", 
+  "doctype": "DocField", 
+  "fieldname": "description", 
+  "fieldtype": "Text", 
+  "label": "Description"
+ }, 
+ {
+  "depends_on": "eval:!doc.__islocal", 
+  "doctype": "DocField", 
+  "fieldname": "thread_html", 
+  "fieldtype": "HTML", 
+  "label": "Thread HTML", 
+  "read_only": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "additional_info", 
+  "fieldtype": "Section Break", 
+  "hidden": 1, 
+  "label": "Reference", 
+  "read_only": 1
+ }, 
+ {
+  "depends_on": "eval:!doc.__islocal", 
+  "doctype": "DocField", 
+  "fieldname": "column_break0", 
+  "fieldtype": "Column Break", 
+  "hidden": 1, 
+  "width": "50%"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "lead", 
+  "fieldtype": "Link", 
+  "hidden": 1, 
+  "label": "Lead", 
+  "options": "Lead"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "contact", 
+  "fieldtype": "Link", 
+  "hidden": 1, 
+  "label": "Contact", 
+  "options": "Contact"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "customer", 
+  "fieldtype": "Link", 
+  "hidden": 1, 
+  "in_filter": 1, 
+  "label": "Customer", 
+  "options": "Customer", 
+  "print_hide": 1, 
+  "search_index": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "customer_name", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Customer Name", 
+  "reqd": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "content_type", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Content Type"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "opening_date", 
+  "fieldtype": "Date", 
+  "hidden": 1, 
+  "label": "Opening Date"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "opening_time", 
+  "fieldtype": "Time", 
+  "hidden": 1, 
+  "label": "Opening Time"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "company", 
+  "fieldtype": "Link", 
+  "hidden": 1, 
+  "label": "Company", 
+  "options": "Company", 
+  "reqd": 0
+ }, 
+ {
+  "default": "Unread", 
+  "doctype": "DocField", 
+  "fieldname": "flag", 
+  "fieldtype": "Select", 
+  "in_list_view": 1, 
+  "label": "Flag", 
+  "options": "Read\nUnread"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "communications", 
+  "fieldtype": "Table", 
+  "hidden": 1, 
+  "label": "Communications", 
+  "options": "Communication", 
+  "print_hide": 1
+ }, 
+ {
+  "doctype": "DocPerm"
+ }
+]

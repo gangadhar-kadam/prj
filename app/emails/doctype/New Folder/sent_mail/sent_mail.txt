@@ -1,0 +1,125 @@
+[
+ {
+  "creation": "2014-06-27 09:55:13", 
+  "docstatus": 0, 
+  "modified": "2014-06-27 10:05:07", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "autoname": "SM/.#############", 
+  "custom": 1, 
+  "doctype": "DocType", 
+  "document_type": "Transaction", 
+  "module": "Gmail", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "name": "__common__", 
+  "parent": "Sent Mail", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0
+ }, 
+ {
+  "cancel": 1, 
+  "create": 1, 
+  "doctype": "DocPerm", 
+  "name": "__common__", 
+  "parent": "Sent Mail", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "role": "All", 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Sent Mail"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "subject_section", 
+  "fieldtype": "Section Break", 
+  "label": "Subject"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "subject", 
+  "fieldtype": "Data", 
+  "label": "Subject"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "naming_series", 
+  "fieldtype": "Data", 
+  "label": "Series"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_4", 
+  "fieldtype": "Column Break"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "raised_by", 
+  "fieldtype": "Data", 
+  "label": "Raised By (Email)"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email_uid", 
+  "fieldtype": "Int", 
+  "label": "Email uid"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email_date", 
+  "fieldtype": "Date", 
+  "label": "Email Date"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "owner1", 
+  "fieldtype": "Data", 
+  "label": "Owner"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "messages", 
+  "fieldtype": "Section Break", 
+  "label": "Messages"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "description", 
+  "fieldtype": "Text", 
+  "label": "Description"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "thread_html", 
+  "fieldtype": "HTML", 
+  "label": "Thread HTML"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "flag", 
+  "fieldtype": "Select", 
+  "label": "Flag", 
+  "options": "Read\nUnread"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "communications", 
+  "fieldtype": "Table", 
+  "hidden": 1, 
+  "label": "Communications", 
+  "options": "Communication"
+ }, 
+ {
+  "doctype": "DocPerm"
+ }
+]

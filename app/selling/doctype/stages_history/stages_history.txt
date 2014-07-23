@@ -1,0 +1,43 @@
+[
+ {
+  "creation": "2014-05-03 07:48:29", 
+  "docstatus": 0, 
+  "modified": "2014-05-03 07:48:29", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "doctype": "DocType", 
+  "document_type": "Transaction", 
+  "istable": 1, 
+  "module": "Selling", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "in_list_view": 1, 
+  "name": "__common__", 
+  "parent": "Stages History", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read_only": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Stages History"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "type", 
+  "fieldtype": "Select", 
+  "label": "Type", 
+  "options": "\nRFR\nCRFR\nRFL\nCRFL"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "date", 
+  "fieldtype": "Date", 
+  "label": "Date"
+ }
+]

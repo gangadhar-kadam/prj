@@ -1,0 +1,1110 @@
+[
+ {
+  "creation": "2014-04-10 06:45:52", 
+  "docstatus": 0, 
+  "modified": "2014-06-17 03:51:40", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "allow_import": 1, 
+  "autoname": "QO/.########", 
+  "doctype": "DocType", 
+  "document_type": "Transaction", 
+  "is_submittable": 1, 
+  "module": "Selling", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "name": "__common__", 
+  "parent": "Questionnaire", 
+  "parentfield": "fields", 
+  "parenttype": "DocType"
+ }, 
+ {
+  "cancel": 1, 
+  "create": 1, 
+  "doctype": "DocPerm", 
+  "name": "__common__", 
+  "parent": "Questionnaire", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "submit": 0, 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Questionnaire"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "site_location_and_information", 
+  "fieldtype": "Section Break", 
+  "label": "Site Location And Information", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "is_customer", 
+  "fieldtype": "Check", 
+  "label": "Is Customer", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "amended_from", 
+  "fieldtype": "Link", 
+  "label": "Amended From", 
+  "no_copy": 1, 
+  "options": "Questionnaire", 
+  "permlevel": 0, 
+  "print_hide": 1, 
+  "read_only": 1
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "lead_name", 
+  "fieldtype": "Link", 
+  "label": "Lead Name", 
+  "options": "Lead", 
+  "permlevel": 0
+ }, 
+ {
+  "depends_on": "is_customer", 
+  "doctype": "DocField", 
+  "fieldname": "client_name", 
+  "fieldtype": "Link", 
+  "label": "Customer Name", 
+  "options": "Customer", 
+  "permlevel": 1, 
+  "reqd": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "site_address", 
+  "fieldtype": "Link", 
+  "label": "Site Address", 
+  "options": "Address", 
+  "permlevel": 0, 
+  "reqd": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "address_line1", 
+  "fieldtype": "Data", 
+  "label": "Address Line1", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "address_line2", 
+  "fieldtype": "Data", 
+  "label": "Address Line2", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "city", 
+  "fieldtype": "Data", 
+  "label": "City", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "state", 
+  "fieldtype": "Data", 
+  "label": "State", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_7", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "pincode", 
+  "fieldtype": "Data", 
+  "label": "Zip", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "country", 
+  "fieldtype": "Data", 
+  "label": "Country", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "phone", 
+  "fieldtype": "Data", 
+  "label": "Phone", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email", 
+  "fieldtype": "Data", 
+  "label": "Email", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "opportunity_ref", 
+  "fieldtype": "Data", 
+  "hidden": 1, 
+  "label": "Opportunity Ref", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "building_type_details", 
+  "fieldtype": "Section Break", 
+  "label": "Building Type If NO was answered to the questions above continue on", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "building_type", 
+  "fieldtype": "Data", 
+  "label": "Building Type", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "type_of_commercial_service", 
+  "fieldtype": "Data", 
+  "label": "Type of Commercial Service", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "type_of_residency", 
+  "fieldtype": "Data", 
+  "label": "Type of Residency", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_16", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "type_of_industrial_service", 
+  "fieldtype": "Data", 
+  "label": "Type of Industrial Service", 
+  "options": "\n", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "type_of_agricultural_property", 
+  "fieldtype": "Data", 
+  "label": "Type of Agricultural Property", 
+  "options": "\n", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "type_of_governmental_property", 
+  "fieldtype": "Data", 
+  "label": "Type of Governmental Property", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "prequalifications_for_all_sites", 
+  "fieldtype": "Section Break", 
+  "label": "Prequalifications for all sites", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "does_the_property", 
+  "fieldtype": "Select", 
+  "label": "Does the property", 
+  "options": "\nYes \nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "property_within_200", 
+  "fieldtype": "Select", 
+  "label": "Is the property within 200 ft. from a TypeI or TypeII.A water supply well?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "property_within_75", 
+  "fieldtype": "Select", 
+  "label": "Is the property within 75 ft. from a Type IIB or TypeIII water supply well?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "property_within_50", 
+  "fieldtype": "Select", 
+  "label": "Is the property within 50 ft. of a domestic well?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_25", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "property_on_large_lake", 
+  "fieldtype": "Select", 
+  "label": "Is the property on a large lake or in a flood plain?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "property_500", 
+  "fieldtype": "Select", 
+  "label": "Is the property 500 ft. within a wetland or an inland lake or stream?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "currency_there", 
+  "fieldtype": "Select", 
+  "label": "Currenty are there or has there ever been any underground tank(s) on the property?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_29", 
+  "fieldtype": "Section Break", 
+  "label": "If NO was answered to the questions above, continue on.", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "site_history", 
+  "fieldtype": "Section Break", 
+  "label": "Site History", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "previously_industrial", 
+  "fieldtype": "Select", 
+  "label": "Was the site previously industrial?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "site_refilled", 
+  "fieldtype": "Select", 
+  "label": "Was the site refilled?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_33", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "site_contaminated", 
+  "fieldtype": "Select", 
+  "label": "Was the site contaminated?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_35", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "questions", 
+  "fieldtype": "Small Text", 
+  "label": "If yes to the questions above, provide explanation such as when, where, why", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "specific", 
+  "fieldtype": "Section Break", 
+  "label": "Specific ", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "If yes, check all that apply", 
+  "doctype": "DocField", 
+  "fieldname": "specific_tank", 
+  "fieldtype": "Select", 
+  "label": "Does the property have a septic tank or septic field?", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_39", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "existing", 
+  "fieldtype": "Check", 
+  "label": "Existing septic tank", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "removed", 
+  "fieldtype": "Check", 
+  "label": "Removed septic tank", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_42", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "existing_field", 
+  "fieldtype": "Check", 
+  "label": "Existing septic field", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "removed_field", 
+  "fieldtype": "Check", 
+  "label": "Removed septic field", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "parjana_representative_contact_information", 
+  "fieldtype": "Section Break", 
+  "label": "<b>Parjana Representative Contact Information<b>", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "name1", 
+  "fieldtype": "Data", 
+  "label": "Name", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "date_of_request", 
+  "fieldtype": "Date", 
+  "label": "Date of Request", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_48", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "phone_no", 
+  "fieldtype": "Data", 
+  "label": "Phone", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "email_add", 
+  "fieldtype": "Data", 
+  "label": "Email", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "budget", 
+  "fieldtype": "Currency", 
+  "label": "Client\u2019s Budget Expectation", 
+  "options": "currency", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_53", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "Please indicate specific problem area(s) for standing water or waterproofing on drawing/picture", 
+  "doctype": "DocField", 
+  "fieldname": "draining_objective", 
+  "fieldtype": "Select", 
+  "label": "Draining Objective", 
+  "options": "\nStanding water\nWaterproofing (foundation)", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "additional_explanation", 
+  "fieldtype": "Small Text", 
+  "label": "Comments and/or additional explanation if needed", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_56", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "water_supply", 
+  "fieldtype": "Select", 
+  "label": "Water Supply", 
+  "options": "\nWell Water\nCity Water & City Sewer", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "depth", 
+  "fieldtype": "Small Text", 
+  "label": "What is the type and depth of the well?", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "potential_barriers_concerns", 
+  "fieldtype": "Section Break", 
+  "label": "Potential Barriers/Concerns", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "underground_obstacles", 
+  "fieldtype": "Check", 
+  "label": "Underground obstacles", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "fertilizer_storage", 
+  "fieldtype": "Check", 
+  "label": "Fertilizer storage", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_61", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "sprinkler_system", 
+  "fieldtype": "Check", 
+  "label": "Sprinkler system", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "underground_pool", 
+  "fieldtype": "Check", 
+  "label": "Underground pool", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_64", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "surrounding_bodies", 
+  "fieldtype": "Check", 
+  "label": "Lakes, ponds, surrounding bodies of water", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "environment", 
+  "fieldtype": "Check", 
+  "label": "Surrounding environment inclines/declines", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_67", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "If accessibility barriers checked, please describe", 
+  "doctype": "DocField", 
+  "fieldname": "accessibility_barriers", 
+  "fieldtype": "Check", 
+  "label": "Accessibility Barriers (decks, paver patios, wires, landscaping, narrow gates, steep inclines/declines)", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_69", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "describe", 
+  "fieldtype": "Small Text", 
+  "label": "Note: Describe the type of patio/deck and whether it is removable.", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_72", 
+  "fieldtype": "Section Break", 
+  "label": "FOR STANDING WATER, STOP HERE. CONTINUE ON FOR WATERPROOFING", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "standing_water", 
+  "fieldtype": "Check", 
+  "label": "STANDING WATER ", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_73", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "waterproofing", 
+  "fieldtype": "Check", 
+  "label": "WATERPROOFING", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "experienced", 
+  "fieldtype": "Section Break", 
+  "label": "Have you experienced any of the following issues? ", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "water_in_walls", 
+  "fieldtype": "Check", 
+  "label": "Water in walls", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "water_over", 
+  "fieldtype": "Check", 
+  "label": "Water Over/Under Footer", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "window_cap_crack", 
+  "fieldtype": "Check", 
+  "label": "Window cap crack", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "floor_crack", 
+  "fieldtype": "Check", 
+  "label": "Floor crack", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_76", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "chimney_door", 
+  "fieldtype": "Check", 
+  "label": "Chimney door/pipe", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "rod_holes", 
+  "fieldtype": "Check", 
+  "label": "Rod Holes", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "beam_leak", 
+  "fieldtype": "Check", 
+  "label": "I-Beam Leak", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "sewer_backups", 
+  "fieldtype": "Check", 
+  "label": "Sewer backups", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_82", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "bowed_walls", 
+  "fieldtype": "Check", 
+  "label": "Bowed walls", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "cracked_walls", 
+  "fieldtype": "Check", 
+  "label": "Cracked walls", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "leaking_gutters", 
+  "fieldtype": "Check", 
+  "label": "Leaking gutters", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_84", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "ditrection", 
+  "fieldtype": "Select", 
+  "hidden": 1, 
+  "label": "Directions", 
+  "options": "\nNorth\nSouth\nEast\nWest", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "directions", 
+  "fieldtype": "Select", 
+  "hidden": 1, 
+  "label": "Directions", 
+  "options": "\nNorth\nSouth\nEast\nWest", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "direction_s", 
+  "fieldtype": "Select", 
+  "hidden": 1, 
+  "label": "Directions", 
+  "options": "\nNorth\nSouth\nEast\nWest", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_88", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "If you experience any of those issues, please describes (using directions)", 
+  "doctype": "DocField", 
+  "fieldname": "severity", 
+  "fieldtype": "Small Text", 
+  "label": "Discuss the severity of each checked issue", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "Please indicate slab area/crawl space on map/drawing", 
+  "doctype": "DocField", 
+  "fieldname": "foundation_description", 
+  "fieldtype": "Section Break", 
+  "label": "Foundation Description", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "basement", 
+  "fieldtype": "Check", 
+  "label": "Basement", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_92", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "crawl_space", 
+  "fieldtype": "Check", 
+  "label": "Crawl Space", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_94", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "slab", 
+  "fieldtype": "Check", 
+  "label": "Slab", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_96", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "partial", 
+  "fieldtype": "Check", 
+  "label": "Partial", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "foundation_type", 
+  "fieldtype": "Section Break", 
+  "label": "Foundation Type", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "block_wall", 
+  "fieldtype": "Check", 
+  "label": "Block wall", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_100", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "concrete_wal", 
+  "fieldtype": "Check", 
+  "label": "Concrete wal", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_102", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "brick_wall", 
+  "fieldtype": "Check", 
+  "label": "Brick wall", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_104", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "stone_wall", 
+  "fieldtype": "Check", 
+  "label": "Stone wall", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_106", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "(measurement from ground \nlevel to basement floor)", 
+  "doctype": "DocField", 
+  "fieldname": "depth_of_basement", 
+  "fieldtype": "Data", 
+  "label": "Depth of basement", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "(Postive or negative grade?)\nNote: If any grade, indicate on the \nmap/drawing where along the \nbuilding the grade occurs.", 
+  "doctype": "DocField", 
+  "fieldname": "ground_level_slope", 
+  "fieldtype": "Data", 
+  "label": "Ground level slope", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_113", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "(measurent from basement floor to bottom of pit)", 
+  "doctype": "DocField", 
+  "fieldname": "sump_pump_depth", 
+  "fieldtype": "Data", 
+  "label": "Sump Pump Depth", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "sump_pump", 
+  "fieldtype": "Select", 
+  "label": "Sump pump", 
+  "options": "\nYes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_108", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "number_of_pumps", 
+  "fieldtype": "Int", 
+  "label": "Number of pumps", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_110", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "frequency", 
+  "fieldtype": "Data", 
+  "label": "Frequency", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "section_break_112", 
+  "fieldtype": "Section Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "additional_comments", 
+  "fieldtype": "Small Text", 
+  "label": "Additional comments", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "attachments", 
+  "fieldtype": "Section Break", 
+  "label": "<b>Attachments<b>", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "map", 
+  "fieldtype": "Check", 
+  "label": "Map", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_116", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "cad", 
+  "fieldtype": "Check", 
+  "label": "CAD", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_118", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "blue_print", 
+  "fieldtype": "Check", 
+  "label": "Blue Print", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_120", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "drawing", 
+  "fieldtype": "Check", 
+  "label": "Drawing", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_122", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "other", 
+  "fieldtype": "Check", 
+  "label": "Other", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "screenshot_checklist", 
+  "fieldtype": "Section Break", 
+  "label": "<b>Screenshot Checklist<b>", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "exact_location", 
+  "fieldtype": "Check", 
+  "label": "Identify exact location on aerial view", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "specific_problem", 
+  "fieldtype": "Check", 
+  "label": "Highlight specific problem area(s) on property to be addressed", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_127", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "draw", 
+  "fieldtype": "Check", 
+  "label": "Draw on map/drawing property lines", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "property", 
+  "fieldtype": "Check", 
+  "label": "Provide additional photos of property, problem area(s) and surrounding area", 
+  "permlevel": 0
+ }, 
+ {
+  "description": "Would you like a layout engineer to contact you before a range/layout begins?", 
+  "doctype": "DocField", 
+  "fieldname": "parjana_representative", 
+  "fieldtype": "Section Break", 
+  "label": "<b>Parjana Representative<b>", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "yes", 
+  "fieldtype": "Check", 
+  "hidden": 1, 
+  "label": "Yes", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "no", 
+  "fieldtype": "Check", 
+  "hidden": 1, 
+  "label": "No", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "yesno", 
+  "fieldtype": "Select", 
+  "label": " ", 
+  "options": "Yes\nNo", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "column_break_133", 
+  "fieldtype": "Column Break", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "representive_name", 
+  "fieldtype": "Data", 
+  "label": "Name", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "number", 
+  "fieldtype": "Data", 
+  "label": "Phone", 
+  "permlevel": 0
+ }, 
+ {
+  "doctype": "DocPerm", 
+  "role": "Sales User"
+ }, 
+ {
+  "doctype": "DocPerm", 
+  "role": "Sales Manager"
+ }
+]
